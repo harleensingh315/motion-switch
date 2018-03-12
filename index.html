@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>::Switch::</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+<div class="wrap">
+
+	<h1>Switch Me</h1>
+	
+	<div class="Switch Off">
+		<div class="Toggle"></div>
+	<span class="On">ON</span>
+	<span class="Off">OFF</span>
+	</div>
+</div>
+	
+
+
+    
+    
+<script src="js/jquery-3.2.1.min.js"></script>
+    
+<script type="text/javascript" >
+$(document).ready(function() {
+
+$('.Switch').click(function() {
+    $(this).toggleClass('On').toggleClass('Off');
+    $('body').toggleClass("off");
+});
+
+});
+</script>
+    
+</body>
+</html>
